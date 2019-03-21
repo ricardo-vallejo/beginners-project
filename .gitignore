@@ -19,6 +19,7 @@
 *.pdf
 *.txt
 *.iml
+*.kotlin_module
 
 # sbt specific
 .cache/
