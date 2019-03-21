@@ -1,0 +1,39 @@
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# File extensions
+*.swp
+*.class
+*.log
+*.pdf
+*.txt
+*.iml
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+project/activator-sbt-eclipse-shim.sbt
+project/activator-sbt-idea-shim.sbt
+.idea
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
