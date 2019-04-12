@@ -11,7 +11,7 @@ object DefaultArgs extends App {
   def savePicture(format: String = "jpg", width: Int, height: Int): Unit = println("Saving picture ...")
 
   savePicture("jpg", 800, 600) //If I don't have default values I have to pass all the values.
-  savePicture(800, 600) //If I have a default value but is a lead value I can't start with the second value.
+  //savePicture(800, 600) //If I have a default value but is a lead value I can't start with the second value.
   savePicture(width = 800, height = 600) //I can solve the previous message if I call every parameter.
 
   //I can call the parameters in a different order.
