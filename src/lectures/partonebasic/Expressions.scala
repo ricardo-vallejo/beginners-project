@@ -2,7 +2,7 @@ package lectures.partonebasic
 
 object Expressions extends App {
 
-  val addition: Int = 1 + 2
+  val addition: Int = 1 + 2 // EXPRESSION
   println(addition)
 
   println(2 + 3 * 4)
@@ -27,21 +27,21 @@ object Expressions extends App {
   println(if (aCondition) 5 else 3)
 
   var i = 0
-  while (i < 10){
+  while (i < 10){   //NEVER write this again
     println(i)
     i += 1
   }
 
-  //NEVER write this again
-
   //EVERYTHING in Scala is an Expression
 
-  val aWeirdValue = (aVariable = 3) //Unit === void
+  val aWeirdValue: Unit = (aVariable = 3) //Unit === void
   println(aWeirdValue)
+
+  // Side effects: println(), whiles, reassigning
 
   // Code blocks
 
-  val aCodeBlock = {
+  val aCodeBlock: String = {
     val y = 2
     val z = y + 1
 

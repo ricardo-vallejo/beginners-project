@@ -14,6 +14,7 @@ object Functions extends App {
   def aParameterlessFunction(): Int = 42
   println(aParameterlessFunction())
 
+  // Recursive function
   def aRepeatedFunction(aString: String, n: Int): String = {
     if (n == 1) aString
     else aString + aRepeatedFunction(aString, n - 1)
@@ -50,6 +51,7 @@ object Functions extends App {
   println(s"Fibonacci Function: ${fibonacciFunction(8)}")
 
   def primeNumberFunction(number: Int): Boolean = {
+    @scala.annotation.tailrec
     def isPrimeUntil(aux: Int): Boolean =
       if (aux <= 1) true
       else number % aux != 0 && isPrimeUntil(aux -1)
